@@ -1,0 +1,23 @@
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"/>
+    <script language="javascript" type="text/javascript" src="lib/jquery.min.lib"></script>
+    <script language="javascript" type="text/javascript" src="lib/jquery.jqplot.min.lib"></script>
+    <link rel="stylesheet" type="text/css" href="lib/jquery.jqplot.min.css" />
+
+    <script type="text/javascript" charset="utf-8">
+        $(function(){
+            Ti.App.fireEvent('myJqplotEvent'); // event_nameと同じ値
+        });
+        function jqplot_ti(data, option) {
+            $.jqplot('chartdiv', data, option);
+        }
+    </script>
+</head>
+<body>
+<!-- height, width は Titaniumのjs側で指定する 300pd から 10ほど減算して 290とする -->
+<!-- すいません。どうしてこのような値が適当になるのかわかっていません... -->
+<div id="chartdiv" style="height:290 ;width: 290;" ></div>
+</body>
+</html>
