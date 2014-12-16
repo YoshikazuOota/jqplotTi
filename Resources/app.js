@@ -20,7 +20,7 @@ var webView = Ti.UI.createWebView({
   width: '300dp',
   touchEnabled: false // これを付けないとWebView内でスクロールが発生したりして不都合がある
 });
-
+window.add(webView);
 
 var chartFunc = function () {
   // 注: webview側のJSには文字列として値を渡すので、オブジェクトは指定できません
@@ -30,6 +30,6 @@ var chartFunc = function () {
 Titanium.App.addEventListener(event_name, chartFunc);
 
 
-window.add(webView);
+
 window.open();
 
