@@ -10,7 +10,7 @@ var option = {
 };
 
 var window = Ti.UI.createWindow({
-  backgroundColor: 'white',
+  backgroundColor: 'white'
 });
 
 var webView = Ti.UI.createWebView({
