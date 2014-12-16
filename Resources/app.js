@@ -11,14 +11,14 @@ var option = {
 
 var window = Ti.UI.createWindow({
   backgroundColor: 'white',
-  touchEnabled: false // これを付けないとWebView内でスクロールが発生したりして不都合がある
 });
 
 var webView = Ti.UI.createWebView({
   url: 'html/jqplot.html',
   top: '30dp',
   height: '300dp',
-  width: '300dp'
+  width: '300dp',
+  touchEnabled: false // これを付けないとWebView内でスクロールが発生したりして不都合がある
 });
 
 
